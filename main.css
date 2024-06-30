@@ -1,0 +1,60 @@
+.welcome-text {
+    text-align: center;
+    font-family: "Lucida Console";
+    font-size: 5vw;
+}
+
+body{
+    color: salmon;
+    background-color: #151516;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+html {
+    height: 100%;
+}
+  
+footer {
+  font-family: "Lucida Console";
+  color: salmon;
+  font-size: 2.5vw;
+  padding: 20px;
+}
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 40vh;
+}
+
+.content{
+    flex: 1;
+    padding: 20px;
+}
+
+.autoShow{
+    animation: autoShowAnim;
+    animation-duration: view(40%,50%);
+}
+
+.hidden{
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateY(20px) scale(0.3);
+    transition: all 1s
+}
+
+.show{
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+  
