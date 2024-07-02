@@ -1,55 +1,22 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Multi Dimension Studio - main</title>
-
-    <link rel="stylesheet" href="main.css">
-    <script defer src="main.js"></script>
-  </head>
-  <body>
-    <div class="content">
-      <header class="welcome-text">
-        <h1 class="hidden">
-          Hello there <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" style="width: 7%;"/>
-        </h1>
-      </header>
-      <div class="main-text">
-        <section class="hidden">
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. A harum aperiam animi aliquid, rem totam quisquam exercitationem at temporibus sapiente ut atque ab optio aut qui molestias itaque ipsum vero.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quaerat facilis nesciunt, suscipit sapiente fuga voluptatibus possimus aliquid, in nisi inventore molestias voluptatum corrupti a beatae, asperiores quasi modi saepe!
-            </p>
-        </section>
-      </div>
-      <section>
-        <div class="avatars">
-          <div class="avatar hidden">
-            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Daisy" alt="avatar" />
-          </div>
-          <div class="avatar hidden">
-            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Bear" alt="avatar" />
-          </div>
-          <div class="avatar hidden">
-            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Bandit" alt="avatar" />
-          </div>
-          <div class="avatar hidden">
-            <img src="https://api.dicebear.com/9.x/notionists/svg?seed=Charlie" alt="avatar" />
-          </div>
-      </section>
-     </div>
-    </div> 
-    <footer>
-      <h2 align="center" class="socials"> 
-        Socials
-        <p>
-          <a href="https://t.me/Max2010Sul">
-            <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" class="logo"/>
-          </a>
-        </p>
-      </h2>
-    </footer>
-  </body>
-</html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script defer src="main.js"></script>
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Main</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+            <h2>Collapsed Sidebar</h2>
+            <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+        </div>
+    </body>
+</html> 
